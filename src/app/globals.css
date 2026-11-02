@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #7B1113;
+  --brand-primary-dark: #520A0C;
+  --brand-secondary: #0F5132;
+  --brand-secondary-light: #198754;
+  --brand-accent-gold: #C59B27;
+  --brand-accent-gold-light: #E8C15A;
+  --brand-bg-cream: #FCFBF7;
+  --brand-bg-card: #FFFFFF;
+  --brand-text-dark: #1C1917;
+  --brand-text-muted: #665C54;
+  --brand-border-gold: #E6D7B8;
+
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Poppins', 'Inter', -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--brand-bg-cream);
+  color: var(--brand-text-dark);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--brand-bg-cream);
+  color: var(--brand-text-dark);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle raw silk fabric pattern */
+.silk-texture-bg {
+  background-color: var(--brand-bg-cream);
+  background-image: radial-gradient(rgba(197, 155, 39, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C59B27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B1113;
+}
+
+/* Luxury gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E8C15A 0%, #C59B27 50%, #9B7617 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury maroon text gradient */
+.text-maroon-gradient {
+  background: linear-gradient(135deg, #7B1113 0%, #A3181C 50%, #520A0C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

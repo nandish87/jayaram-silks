@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "collections": "Collections",
+    "about": "Our Story",
+    "craftsmanship": "Craftsmanship",
+    "whyUs": "Why Choose Us",
+    "wholesale": "Wholesale Enquiry",
+    "gallery": "Loom Gallery",
+    "contact": "Visit Us",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "badge": "Authentic Handloom Weavers & Wholesale Manufacturers",
+    "title": "Pure Hand Loom Silk Sarees",
+    "titleHighlight": "Direct From The Weavers",
+    "subtitle": "Woven with pure mulberry silk and authentic zari on traditional pit-looms in Madanapalle. Supplying wholesale bulk orders and bridal trousseaus across India at direct loom prices.",
+    "ctaCollections": "Explore Collections",
+    "ctaWhatsApp": "Enquire on WhatsApp",
+    "ctaWholesale": "Wholesale Bulk Pricing"
+  },
+  "trust": {
+    "title": "Why Connoisseurs Trust Jayaram Silks"
+  },
+  "collections": {
+    "badge": "Loom Exclusives",
+    "title": "Masterpiece Saree Collections",
+    "subtitle": "Every drape is individually woven by master artisans with pure silk yarn, intricate temple borders, and traditional zari buttis.",
+    "filterAll": "All Collections",
+    "searchPlaceholder": "Search by color, fabric, or motif (e.g., peacock, temple, magenta)...",
+    "showingCount": "Showing {count} authentic handloom designs",
+    "contactForPrice": "Contact for Price",
+    "wholesalePrice": "Wholesale Rate on Request",
+    "viewDetails": "View Saree Details",
+    "enquireWhatsApp": "Enquire on WhatsApp",
+    "inStock": "Ready for Dispatch"
+  },
+  "productModal": {
+    "fabric": "Fabric & Material",
+    "zari": "Zari Work & Pallu",
+    "colors": "Color Shades",
+    "sku": "Loom Reference / SKU",
+    "enquireText": "Enquire About This Saree",
+    "enquireSub": "Direct chat with our master weavers in Madanapalle",
+    "close": "Close"
+  },
+  "about": {
+    "badge": "Loom Heritage Since 1988",
+    "title": "Generations of Master Weaving in Madanapalle",
+    "p1": "At Y. Jayaram Silk Sarees, weaving is not merely a trade—it is a sacred hereditary art form. Owned and operated by Y. Jayaram & Bro's, our family has nurtured the rich handloom traditions of Madanapalle, Andhra Pradesh for over three decades.",
+    "p2": "Unlike modern powerlooms that mass-produce synthetic fabrics, every single saree from our loom takes days of dedicated artisan labor. From manually preparing the warp and weft to hand-throwing the wooden shuttle, we guarantee the tactile softness, enduring luster, and spiritual grandeur of genuine handloom silk.",
+    "statsTitle": "Our Legacy in Numbers"
+  },
+  "craftsmanship": {
+    "badge": "The Sacred Process",
+    "title": "From Mulberry Cocoon to Royal Drape",
+    "subtitle": "Discover the 5 meticulous stages of authentic South Indian handloom silk creation."
+  },
+  "whyUs": {
+    "badge": "The Weaver Advantage",
+    "title": "Why Buy Direct From Y. Jayaram & Bro's?",
+    "subtitle": "Experience the pride of owning authentic handloom pure silk without distributor markups."
+  },
+  "wholesale": {
+    "badge": "Direct Loom Wholesale",
+    "title": "Wholesale Supply & Bulk Ordering",
+    "subtitle": "Special discounted rate slabs for saree retailers, wedding trousseau buyers, bridal parties, and boutique owners worldwide.",
+    "moqLabel": "Minimum Order Quantity",
+    "formTitle": "Send Wholesale Enquiry",
+    "formSubtitle": "We respond within 30 minutes on WhatsApp with our latest price list & video catalogue.",
+    "name": "Your Name / Business Name",
+    "phone": "WhatsApp / Phone Number",
+    "city": "City & State",
+    "quantity": "Quantity Required (e.g., 6, 20, 50+ Sarees)",
+    "message": "Specify requirements (colors, price range, wedding date, or reselling)",
+    "submit": "Submit Enquiry on WhatsApp",
+    "successMessage": "Thank you! Redirecting to WhatsApp to send your enquiry directly to the weavers."
+  },
+  "gallery": {
+    "badge": "Visual Splendor",
+    "title": "Loom Photography & Fabric Showcase",
+    "subtitle": "Unfiltered high-resolution photographs of our real handloom weaves, temple borders, and bridal box presentations."
+  },
+  "testimonials": {
+    "badge": "Patron Love",
+    "title": "Trusted by Brides & Boutiques Pan-India",
+    "subtitle": "Hear from the families and business partners who choose our Madanapalle handloom silks."
+  },
+  "contact": {
+    "badge": "Showroom & Weaving Unit",
+    "title": "Visit Us or Get in Touch",
+    "subtitle": "We welcome you to experience our live looms, inspect raw silk yarns, and browse hundreds of ready-to-dispatch sarees in person.",
+    "addressTitle": "Weaving Showroom Address",
+    "phoneTitle": "Direct Weaver Call Lines",
+    "hoursTitle": "Showroom Timings",
+    "getDirections": "Get Directions on Google Maps",
+    "callNow": "Call {phone}"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "collections": "Featured Collections",
+    "contactInfo": "Direct Contact",
+    "copyright": "All rights reserved. Handcrafted pure silk sarees.",
+    "whiteLabelNote": "Re-brandable White-Label Handloom Platform"
+  }
+}
