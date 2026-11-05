@@ -186,15 +186,41 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Copyright & White-Label Credit */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-amber-200/60 gap-3">
+        {/* Bottom Copyright & Agency Watermark Credit */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-amber-200/60 gap-4">
           <div>
             &copy; {currentYear} {brandConfig.businessName}. {t.footer.copyright}
           </div>
 
-          {brandConfig.credits.show && (
-            <div className="text-center sm:text-right text-amber-300/80">
-              <span>{brandConfig.credits.text}</span>
+          {brandConfig.credits?.show && (
+            <div className="flex items-center space-x-3">
+              <a
+                href={brandConfig.credits.agencyUrl || "https://getmonolith.in"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-black/40 border border-brand-accentGold/30 hover:border-cyan-400/60 hover:bg-black/60 transition-all duration-300 group shadow-sm"
+                title={`${brandConfig.credits.agencyName || "Monolith"} — ${brandConfig.credits.tagline || "Autonomous AI Infrastructure"}`}
+              >
+                {/* Monolith SVG Mark */}
+                <div className="relative w-4 h-4 flex items-center justify-center flex-shrink-0">
+                  <svg viewBox="0 0 32 32" fill="none" className="w-4 h-4">
+                    <rect width="32" height="32" rx="6" fill="rgba(6,182,212,0.2)"></rect>
+                    <path
+                      d="M8 24V8h4.5l3.5 7 3.5-7H24v16h-4V14.5L16.5 21h-1L12 14.5V24H8z"
+                      fill="#22D3EE"
+                      className="group-hover:fill-cyan-300 transition-colors"
+                    ></path>
+                  </svg>
+                </div>
+
+                <span className="text-[11px] text-amber-200/90 font-normal">
+                  {brandConfig.credits.text || "Engineered by"}
+                </span>
+
+                <span className="text-[11px] font-bold text-white tracking-wider group-hover:text-cyan-300 transition-colors">
+                  {(brandConfig.credits.agencyName || "MONOLITH").toUpperCase()}
+                </span>
+              </a>
             </div>
           )}
         </div>

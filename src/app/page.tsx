@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
+import MonolithWatermark from "@/components/MonolithWatermark";
 import brandConfig from "@config/brand.config";
 
 export default function Home() {
@@ -54,6 +55,9 @@ export default function Home() {
 
       {/* 13. Floating Mobile WhatsApp & Call Action Buttons */}
       <FloatingActions />
+
+      {/* 14. Monolith Agency Watermark Badge */}
+      <MonolithWatermark />
     </main>
   );
 }

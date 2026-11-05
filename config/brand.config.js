@@ -505,10 +505,16 @@ export const brandConfig = {
     locale: "en_IN",
   },
 
-  // Developer / White-Label Credits (can be edited or hidden)
+  // Developer / Agency Watermark & Credits (Configurable / Removable)
   credits: {
     show: true,
-    text: "Handcrafted with pride in Madanapalle, Andhra Pradesh",
+    agencyName: "Monolith",
+    agencyUrl: "https://getmonolith.in",
+    tagline: "One System. Every Reply.",
+    text: "Engineered with pride by Monolith",
+    subtext: "Autonomous AI & Digital Infrastructure",
+    showFloatingBadge: true, // Subtle floating watermark badge at bottom-left
+    showFooterBadge: true, // High-polish footer credit badge with Monolith logo & link
     whiteLabelNotice: "White-label ready: Re-brand in 5 minutes via /config/brand.config.js",
   },
 };

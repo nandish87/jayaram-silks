@@ -107,8 +107,14 @@ export interface BrandConfig {
   };
   credits: {
     show: boolean;
+    agencyName?: string;
+    agencyUrl?: string;
+    tagline?: string;
     text: string;
-    whiteLabelNotice: string;
+    subtext?: string;
+    showFloatingBadge?: boolean;
+    showFooterBadge?: boolean;
+    whiteLabelNotice?: string;
   };
 }
 
