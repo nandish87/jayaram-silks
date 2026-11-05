@@ -12,24 +12,36 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
+
+      const sectionIds = ["hero", "collections", "services", "about", "contact"];
+      const scrollPos = window.scrollY + 140;
+      for (const sId of sectionIds) {
+        const el = document.getElementById(sId);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            setActiveSection(sId);
+            break;
+          }
+        }
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { label: t.nav.home, href: "#hero" },
-    { label: t.nav.collections, href: "#collections" },
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.craftsmanship, href: "#craftsmanship" },
-    { label: t.nav.whyUs, href: "#why-us" },
-    { label: t.nav.wholesale, href: "#wholesale" },
-    { label: t.nav.gallery, href: "#gallery" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.home, href: "#hero", id: "hero" },
+    { label: t.nav.collections, href: "#collections", id: "collections" },
+    { label: t.nav.services || "Services", href: "#services", id: "services" },
+    { label: t.nav.about, href: "#about", id: "about" },
+    { label: t.nav.contact, href: "#contact", id: "contact" },
   ];
 
   return (
@@ -113,18 +125,27 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-7">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-stone-700 hover:text-brand-primary transition-colors tracking-wide relative group py-1"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-accentGold transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
+          {/* Desktop Floating Pill Navigation (Monolith-Inspired) */}
+          <nav className="hidden lg:flex items-center gap-1 p-1 rounded-full bg-stone-900/[0.04] border border-stone-900/[0.08] backdrop-blur-sm shadow-xs">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.id;
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`relative px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 group ${
+                    isActive
+                      ? "text-brand-primary"
+                      : "text-stone-600 hover:text-stone-950"
+                  }`}
+                >
+                  {isActive && (
+                    <span className="absolute inset-0 rounded-full bg-white border border-brand-accentGold/60 shadow-sm" />
+                  )}
+                  <span className="relative z-10">{link.label}</span>
+                </a>
+              );
+            })}
           </nav>
 
           {/* Header Action Buttons */}
@@ -132,20 +153,20 @@ export default function Header() {
             {/* Call Button */}
             <a
               href={`tel:${brandConfig.primaryPhone}`}
-              className="inline-flex items-center space-x-1.5 px-3.5 py-2 text-xs font-semibold text-brand-primary border border-brand-primary/30 rounded-full hover:bg-brand-primary hover:text-white transition-all shadow-sm"
+              className="inline-flex items-center space-x-1.5 px-4 py-2 text-xs font-semibold text-stone-700 hover:text-brand-primary border border-stone-300 hover:border-brand-primary rounded-full transition-all duration-200"
             >
               <Phone size={13} />
               <span>{t.nav.callNow}</span>
             </a>
 
-            {/* WhatsApp CTA */}
+            {/* WhatsApp CTA (High-impact pill like Monolith's Get Started) */}
             <a
               href={`https://wa.me/${brandConfig.whatsappNumber}?text=Hello%20${encodeURIComponent(
                 brandConfig.businessName
               )}%2C%20I%20would%20like%20to%20enquire%20about%20your%20pure%20handloom%20silk%20sarees.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1.5 px-4 py-2 text-xs font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-full shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5"
+              className="relative inline-flex items-center space-x-1.5 px-5 py-2 text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
             >
               <MessageCircle size={14} />
               <span>{t.nav.whatsapp}</span>

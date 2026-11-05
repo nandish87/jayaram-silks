@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import Collections from "@/components/Collections";
+import ServicesSection from "@/components/ServicesSection";
 import AboutUs from "@/components/AboutUs";
 import CraftsmanshipProcess from "@/components/CraftsmanshipProcess";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -29,7 +30,10 @@ export default function Home() {
       {/* 4. Filterable Collections & Products Grid + Product Detail Modal */}
       <Collections />
 
-      {/* 5. About Us: Family Weaver Heritage in Madanapalle */}
+      {/* 5. Weaving & Manufacturing Services (Wholesale, Bridal, Video Call Selection) */}
+      <ServicesSection />
+
+      {/* 6. About Us: Family Weaver Heritage in Madanapalle */}
       <AboutUs />
 
       {/* 6. Handloom Craftsmanship Process (5-Step Visual Journey) */}

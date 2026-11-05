@@ -115,6 +115,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#services" className="hover:text-amber-300 transition-colors">
+                  {t.nav.services || "Services"}
+                </a>
+              </li>
+              <li>
                 <a href="#about" className="hover:text-amber-300 transition-colors">
                   {t.nav.about}
                 </a>

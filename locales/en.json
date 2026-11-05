@@ -2,14 +2,22 @@
   "nav": {
     "home": "Home",
     "collections": "Collections",
-    "about": "Our Story",
+    "services": "Services",
+    "about": "About",
     "craftsmanship": "Craftsmanship",
     "whyUs": "Why Choose Us",
     "wholesale": "Wholesale Enquiry",
     "gallery": "Loom Gallery",
-    "contact": "Visit Us",
+    "contact": "Contact",
     "callNow": "Call Now",
     "whatsapp": "WhatsApp"
+  },
+  "services": {
+    "badge": "Weaving & Manufacturing Services",
+    "title": "Our Weaving & Wholesale Services",
+    "subtitle": "From bulk wholesale packs to bespoke bridal trousseaus and live video call selection — direct from master pit-looms in Madanapalle.",
+    "ctaEnquire": "Enquire on WhatsApp",
+    "viewWholesale": "View Wholesale Pricing"
   },
   "hero": {
     "badge": "Authentic Handloom Weavers & Wholesale Manufacturers",

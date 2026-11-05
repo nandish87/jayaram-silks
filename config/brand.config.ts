@@ -88,6 +88,16 @@ export interface BrandConfig {
     colors: string[];
     sku: string;
   }>;
+  services?: Array<{
+    id: string;
+    icon: string;
+    title: string;
+    teTitle?: string;
+    description: string;
+    teDescription?: string;
+    features: string[];
+    teFeatures?: string[];
+  }>;
   gallery: Array<{ src: string; title: string; category: string }>;
   testimonials: Array<{
     id: number;

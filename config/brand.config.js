@@ -153,6 +153,142 @@ export const brandConfig = {
     },
   ],
 
+  // Manufacturing & Weaver Services
+  services: [
+    {
+      id: "wholesale-supply",
+      icon: "PackageCheck",
+      title: "Wholesale Saree Manufacturing & Bulk Supply",
+      teTitle: "హోల్‌సేల్ పట్టు చీరల సరఫరా & తయారీ",
+      description:
+        "Direct loom supply for retail showrooms, textile boutiques, and reselling networks across India with assorted 6-piece and 10-piece matching combo packs at manufacturer rates.",
+      teDescription:
+        "భారతదేశం అంతటా రిటైల్ షోరూమ్‌లు మరియు బొటిక్‌లకు మగ్గం నుండి నేరుగా హోల్‌సేల్ ధరలకే 6 మరియు 10 చీరల కాంబో సెట్ల సరఫరా.",
+      features: [
+        "Loom-direct wholesale pricing",
+        "Assorted festive color bundles",
+        "Repeat order guarantee",
+        "Custom retail packaging",
+      ],
+      teFeatures: [
+        "మగ్గం నుండి డైరెక్ట్ హోల్‌సేల్ ధరలు",
+        "విభిన్న రంగుల పండుగ కాంబో సెట్లు",
+        "ఎల్లప్పుడూ స్టాక్ లభ్యత",
+        "సేఫ్ రిటైల్ బాక్స్ ప్యాకింగ్",
+      ],
+    },
+    {
+      id: "bridal-custom",
+      icon: "Sparkles",
+      title: "Custom Bridal Trousseau & Wedding Orders",
+      teTitle: "పెళ్లి పట్టు చీరల ప్రత్యేక ఆర్డర్లు",
+      description:
+        "Exclusive bridal pattu weaving with heavy gold zari pallus, bespoke color combinations, and matching bridesmaid sets crafted specially for auspicious wedding celebrations.",
+      teDescription:
+        "శుభకార్యాలు మరియు పెళ్లిళ్ల కోసం ప్రత్యేకంగా భారీ జరీ పల్లులు, కోరిన రంగుల కలయికలతో నేయబడే పెళ్లి పట్టు చీరలు.",
+      features: [
+        "Custom color yarn dyeing",
+        "Grand temple & peacock zari pallus",
+        "Matching family wedding sets",
+        "Direct master weaver consultation",
+      ],
+      teFeatures: [
+        "కోరుకున్న రంగుల ఎంపిక",
+        "భారీ టెంపుల్ & నెమలి జరీ పల్లులు",
+        "కుటుంబ సభ్యులకు మ్యాచింగ్ సెట్లు",
+        "నేరుగా నేత కార్మికులతో సంప్రదింపులు",
+      ],
+    },
+    {
+      id: "video-call",
+      icon: "Video",
+      title: "Live Video Call Loom Selection",
+      teTitle: "లైవ్ వీడియో కాల్ ద్వారా చీరల ఎంపిక",
+      description:
+        "Can't visit Madanapalle in person? Connect directly with our weavers over WhatsApp video call to inspect drape luster, zari weight, and fresh loom stock in real-time.",
+      teDescription:
+        "మదనపల్లె రాలేని వారికోసం వాట్సాప్ వీడియో కాల్ ద్వారా మగ్గంపై తయారైన తాజా చీరలను ప్రత్యక్షంగా చూసి ఎంచుకునే సౌకర్యం.",
+      features: [
+        "Live daylight fabric inspection",
+        "Real-time drape & border view",
+        "Personalized recommendations",
+        "Zero guesswork shopping",
+      ],
+      teFeatures: [
+        "సహజ కాంతిలో చీరల నాణ్యత పరిశీలన",
+        "పల్లు మరియు బోర్డర్ స్పష్టమైన వీక్షణ",
+        "సలహాలు మరియు సూచనలు",
+        "సంతృప్తికరమైన షాపింగ్ అనుభవం",
+      ],
+    },
+    {
+      id: "loom-tours",
+      icon: "Factory",
+      title: "Showroom & Weaving Unit Visits",
+      teTitle: "షోరూమ్ & మగ్గాల ప్రత్యక్ష సందర్శన",
+      description:
+        "Visit our traditional weaving unit in Mayabazaar, Madanapalle. Witness the rhythmic art of wooden pit-loom weaving and choose directly from active looms.",
+      teDescription:
+        "మదనపల్లె మాయాబజార్‌లోని మా నేత మగ్గాలను ప్రత్యక్షంగా సందర్శించి, పట్టు నేసే విధానాన్ని చూసి చీరలు కొనుగోలు చేయవచ్చు.",
+      features: [
+        "Open all 7 days (9:00 AM – 9:00 PM)",
+        "Live pit-loom demonstration",
+        "Convenient Madanapalle location",
+        "Warm traditional hospitality",
+      ],
+      teFeatures: [
+        "వారంలో 7 రోజులు తెరిచి ఉంటుంది (9 AM - 9 PM)",
+        "చేనేత మగ్గం ప్రత్యక్ష ప్రదర్శన",
+        "మదనపల్లె సెంట్రల్ లొకేషన్",
+        "ఆప్యాయమైన ఆతిథ్యం",
+      ],
+    },
+    {
+      id: "pan-india-dispatch",
+      icon: "Truck",
+      title: "Safe Pan-India Express Delivery",
+      teTitle: "దేశవ్యాప్తంగా సురక్షిత ఎక్స్‌ప్రెస్ డెలివరీ",
+      description:
+        "Insured door-to-door courier and parcel transport dispatch to all cities and towns across India with real-time tracking shared on WhatsApp.",
+      teDescription:
+        "భారతదేశంలోని ప్రతి ప్రాంతానికి సురక్షితమైన కొరియర్ మరియు ట్రాన్స్‌పోర్ట్ ద్వారా వేగవంతమైన డెలివరీ మరియు ట్రాకింగ్ సదుపాయం.",
+      features: [
+        "Multi-layer waterproof packaging",
+        "Insured courier & transport partners",
+        "WhatsApp tracking updates",
+        "Prompt dispatch within 24 hours",
+      ],
+      teFeatures: [
+        "వాటర్‌ప్రూఫ్ సురక్షిత ప్యాకింగ్",
+        "నమ్మకమైన కొరియర్ & ట్రాన్స్‌పోర్ట్",
+        "వాట్సాప్‌లో ట్రాకింగ్ వివరాలు",
+        "24 గంటల్లో డిస్పాచ్",
+      ],
+    },
+    {
+      id: "authenticity-guarantee",
+      icon: "ShieldCheck",
+      title: "100% Pure Silk & Tested Zari Guarantee",
+      teTitle: "100% స్వచ్ఛమైన పట్టు & నాణ్యత హామీ",
+      description:
+        "Every saree is hand-woven exclusively from pure natural mulberry silk and authentic tested zari threads. Guaranteed authentic handloom craftsmanship.",
+      teDescription:
+        "ప్రతి చీర స్వచ్ఛమైన మల్బరీ పట్టు మరియు అసలైన జరీతో మాత్రమే నేయబడుతుంది. కల్తీ లేని అసలైన చేనేత హామీ.",
+      features: [
+        "Pure mulberry silk yarn",
+        "Tested traditional gold zari",
+        "No powerloom or synthetic blends",
+        "Artisan weavers direct backing",
+      ],
+      teFeatures: [
+        "అసలైన మల్బరీ పట్టు దారం",
+        "క్వాలిటీ టెస్టెడ్ జరీ",
+        "పవర్‌లూమ్ లేదా సింథటిక్ కల్తీ ఉండదు",
+        "చేనేత కార్మికుల స్వహస్తాల సృష్టి",
+      ],
+    },
+  ],
+
   // Wholesale & Bulk Supply Information
   wholesale: {
     heading: "Direct Weaver Wholesale & Bulk Orders",
